@@ -1,0 +1,10 @@
+check,violations,rows_checked
+INF_A != sum(A subtypes),110,158701
+INF_B != sum(B lineages),2187,162478
+INF_ALL != INF_A + INF_B,0,96768
+INF_ALL > SPEC_PROCESSED_NB,1067,99916
+INF_ALL + INF_NEGATIVE > SPEC_PROCESSED_NB,1371,44873
+SPEC_PROCESSED_NB > SPEC_RECEIVED_NB,2355,65813
+INF_ALL missing although INF_A/INF_B present (recoverable),60097,156865
+negative counts,0,189549
+SPEC_PROCESSED_NB == 0 (no testing; not zero cases),28078,189549

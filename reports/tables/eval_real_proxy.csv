@@ -1,0 +1,5 @@
+detector,episodes_evaluated,episodes_detected_by_peak,sensitivity,median_delay_weeks_from_onset,mean_delay_weeks,total_alert_weeks,alerts_outside_episodes,weeks_outside_episodes,false_alert_rate_per_52wk,evaluation_start,weeks_scored
+C1,13,12,0.9230769230769231,-1.0,-0.6666666666666666,51,27,516,2.7209302325581395,2012-12-31,693
+C2,13,13,1.0,-2.0,-1.3076923076923077,122,51,516,5.1395348837209305,2012-12-31,693
+C3,13,13,1.0,-2.0,-1.4615384615384615,179,73,516,7.3565891472868215,2012-12-31,693
+CUSUM,13,8,0.6153846153846154,1.5,1.625,41,6,516,0.6046511627906976,2012-12-31,693

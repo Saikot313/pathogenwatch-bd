@@ -1,0 +1,82 @@
+{
+  "checksum": "d64afbf5f338822e9fc5395f70de929efde1355ad2d5e7e6575fa75565fbd4fd",
+  "results": {
+    "trend_all": {
+      "n_years": 17,
+      "tau": -0.07352941176470587,
+      "p_value": 0.7150317752938318,
+      "theil_sen_slope_per_year": -0.001225345401702908
+    },
+    "trend_pre_covid_2010_2019": {
+      "n_years": 10,
+      "tau": 0.06666666666666667,
+      "p_value": 0.8618005952380953,
+      "theil_sen_slope_per_year": 0.001300115557695783
+    },
+    "seasonality_test": {
+      "harmonics": 2,
+      "n_weeks": 754,
+      "dispersion": 19.35738814220527,
+      "quasi_F": 167.55707100104433,
+      "df": [
+        4,
+        749
+      ],
+      "p_value": 1.994992407766123e-102
+    },
+    "month_effect": {
+      "kruskal_H": 344.8564926616096,
+      "p_value": 2.969349867312257e-67,
+      "median_by_month": {
+        "1": 0.0068,
+        "2": 0.0205,
+        "3": 0.0476,
+        "4": 0.0952,
+        "5": 0.1902,
+        "6": 0.2881,
+        "7": 0.2831,
+        "8": 0.1881,
+        "9": 0.1143,
+        "10": 0.0591,
+        "11": 0.0161,
+        "12": 0.0141
+      }
+    }
+  },
+  "simulation_dispersion": 19.35738814220527,
+  "forecast": {
+    "target": "INF_ALL",
+    "n_usable": 668,
+    "n_train": 534,
+    "n_test": 134,
+    "split_method": "chronological_holdout",
+    "test_fraction": 0.2,
+    "seed": 20261020,
+    "baseline_last_week": {
+      "mae": 20.746268656716417,
+      "rmse": 31.1752389307293,
+      "r2": 0.8771478795386425
+    },
+    "baseline_seasonal_52_week": {
+      "mae": 92.7089552238806,
+      "rmse": 131.2124573172223,
+      "r2": -1.1762721957173237
+    },
+    "random_forest": {
+      "mae": 39.31417932288421,
+      "rmse": 74.23019156800906,
+      "r2": 0.3034950001801455
+    },
+    "feature_importance": {
+      "lag_1": 0.5766018803079536,
+      "lag_2": 0.1616011577931779,
+      "lag_3": 0.017269865772245666,
+      "lag_4": 0.028394061722940532,
+      "lag_52": 0.029826018223971146,
+      "rolling_mean_4": 0.12102467718817268,
+      "rolling_mean_13": 0.02620113813742912,
+      "iso_week": 0.03908120085410939
+    },
+    "interpretation": "Exploratory forecast only; not an outbreak diagnosis or validated public-health alert."
+  }
+}

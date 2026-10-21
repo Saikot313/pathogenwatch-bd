@@ -1,0 +1,88 @@
+# ============================================================
+# PathogenWatch BD
+# ============================================================
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+credentials.*
+secrets.*
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+
+# Node dependencies, if present
+node_modules/
+
+# Large generated model artifacts
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.onnx
+*.pt
+*.pth
+*.ckpt
+
+# Raw dataset: keep it out of Git
+data/raw/*
+!data/raw/.gitkeep
+
+# Processed datasets: regenerate from the pipeline
+data/processed/*
+!data/processed/.gitkeep
+
+# Bulky generated exports
+reports/**/*.pdf
+reports/**/*.html
+reports/**/*.zip
+reports/**/*.parquet
+reports/**/*.pkl
+reports/**/*.joblib
+reports/**/*.mp4
+reports/**/*.gif
+
+# Keep screenshots used by README
+# Do not ignore screenshots/
+
+# Keep source code, tests, configuration,
+# README, lightweight CSV tables and JSON reports.

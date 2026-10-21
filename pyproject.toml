@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathogenwatch-bd"
+version = "1.0.0"
+description = "Reproducible influenza surveillance analytics for Bangladesh from WHO FluNet (data quality, seasonality, EARS/CUSUM anomaly detection)"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.2", "numpy>=1.26", "scipy>=1.11", "statsmodels>=0.14", "matplotlib>=3.8", "plotly>=5.20", "streamlit>=1.35", "scikit-learn>=1.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

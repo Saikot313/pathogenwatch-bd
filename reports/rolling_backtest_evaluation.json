@@ -1,0 +1,12 @@
+{
+  "baseline_last_week": {
+    "MAE": 11.430769230769231,
+    "RMSE": 22.235107375499673,
+    "n_predictions": 260
+  },
+  "random_forest": {
+    "MAE": 17.456530739888148,
+    "RMSE": 41.09261687574512,
+    "n_predictions": 260
+  }
+}
